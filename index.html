@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesima 09-01-23</title>
+    <link href="css/mesima.css" rel="stylesheet" />
+    <script defer src="js/mesima.js"></script>
+  </head>
+  <body>
+    <h1>Mesima - 09.01.23</h1>
+    <hr />
+    <h1>Add Prodact</h1>
+    <div class="box">
+      <form action="javascript:productsInfo()" id="resetForm">
+        <input
+          type="text"
+          placeholder="Enter Product Name"
+          id="product"
+        /><br />
+        <input
+          type="number"
+          placeholder="Enter Product Price"
+          id="price"
+        /><br />
+        Product Category:
+        <select id="category">
+          <option>Drinks</option>
+          <option>Meat</option>
+          <option>Dairy</option>
+          <option>Snacks</option>
+          <option>Basic</option></select
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter Product Image URL"
+          id="imageLink"
+        /><br />
+        <input type="submit" value="Add Product" />
+        <input type="reset" />
+      </form>
+    </div>
+    <br />
+    <hr />
+    <table>
+      <thead>
+        <h1>My Cart</h1>
+        <tr>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Category</th>
+          <th>Product Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="infoList"></tbody>
+    </table>
+  </body>
+</html>
